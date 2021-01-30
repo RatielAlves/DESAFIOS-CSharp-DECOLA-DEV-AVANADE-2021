@@ -1,0 +1,29 @@
+/*Desafio
+Você terá o desafio de escrever um programa que leia um valor inteiro N (1 < N < 1000). Este N é a quantidade de linhas de saída que serão apresentadas na execução do programa.
+
+Entrada
+O arquivo de entrada contém um número inteiro positivo N.
+
+Saída
+Imprima a saída conforme o exemplo fornecido.*/
+
+
+using System;
+
+
+class Desafio {
+   public static void Main() {
+        var numero = Int32.Parse(Console.ReadLine());
+        
+        if(numero != null)
+        {
+          for(int i = 1; i <= numero; i++)
+          {
+           var numeros = $"{i} {Math.Pow(i,2)} {Math.Pow(i,3)}";
+            Console.WriteLine(numeros);
+          }
+        } else {
+          Console.WriteLine("Insira um novo número entre 1 e 1000:");
+        }
+    }
+}
